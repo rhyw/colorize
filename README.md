@@ -23,13 +23,13 @@ simply select the color you want and watch as the page background changes in rea
 
 ### Options
 
-* Red
-* Blue
-* Green
-* Yellow
-* Purple
-* Black
-* White
+* red
+* orange
+* yellow
+* green
+* blue
+* purple
+* pink
 
 ### License
 
