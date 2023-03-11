@@ -7,12 +7,11 @@
     body {
       font-family: Arial, sans-serif;
       font-size: 14px;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 16px;
-      margin-bottom: 10px;
+      padding: 5px;
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     label {
@@ -24,6 +23,7 @@
       text-align: center;
       line-height: 30px;
       cursor: pointer;
+      transition: border-color 0.3s ease-in-out;
     }
 
     input[type="radio"] {
@@ -34,44 +34,46 @@
       border: 5px solid #4ECDC4;
     }
 
-    button {
-      display: block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #4ECDC4;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    label[title]:hover:after {
+      content: attr(title);
+      padding: 5px 10px;
+      color: #fff;
+      background-color: #000;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-size: 12px;
+      border-radius: 3px;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
     }
 
-    button:hover {
-      background-color: #3CB8B1;
+    label[title]:hover:after {
+      opacity: 1;
     }
-
   </style>
 </head>
 
 <body>
-  <h1>Choose a Color:</h1>
   <div>
-    <input type="radio" id="color1" name="color" value="red">
+    <input type="radio" id="color1" name="color" value="red" title="Red (#E74C3C)">
     <label for="color1" style="background-color: #E74C3C;"></label>
-    <input type="radio" id="color2" name="color" value="orange">
+    <input type="radio" id="color2" name="color" value="orange" title="Orange (#FFA07A)">
     <label for="color2" style="background-color: #FFA07A;"></label>
-    <input type="radio" id="color3" name="color" value="yellow">
+    <input type="radio" id="color3" name="color" value="yellow" title="Yellow (#F1C40F)">
     <label for="color3" style="background-color: #F1C40F;"></label>
-    <input type="radio" id="color4" name="color" value="green">
+    <input type="radio" id="color4" name="color" value="green" title="Green (#2ECC71)">
     <label for="color4" style="background-color: #2ECC71;"></label>
-    <input type="radio" id="color5" name="color" value="blue">
+    <input type="radio" id="color5" name="color" value="blue" title="Blue (#3498DB)">
     <label for="color5" style="background-color: #3498DB;"></label>
-    <input type="radio" id="color6" name="color" value="purple">
+    <input type="radio" id="color6" name="color" value="purple" title="Purple (#9B59B6)">
     <label for="color6" style="background-color: #9B59B6;"></label>
-    <input type="radio" id="color7" name="color" value="pink">
+    <input type="radio" id="color7" name="color" value="pink" title="Pink (#FFC0CB)">
     <label for="color7" style="background-color: #FFC0CB;"></label>
   </div>
-  <button id="apply-color-button">Apply</button>
   <script src="popup.js"></script>
 </body>
-
 </html>
