@@ -5,23 +5,31 @@
     "description": "Change the background color of a website",
     "icons": {
         "16": "src/icons/icon16.png"
-      },
+    },
     "browser_action": {
-      "default_icon": {
-        "16": "src/icons/icon16.png"
-      },
-      "default_title": "Change background color",
-      "default_popup": "src/popup.html"
+        "default_icon": {
+            "16": "src/icons/icon16.png"
+        },
+        "default_title": "Change background color",
+        "default_popup": "src/popup.html"
     },
     "background": {
-      "scripts": ["src/background.js"],
-      "persistent": false
+        "scripts": [
+            "src/background.js"
+        ],
+        "persistent": false
     },
-    "permissions": ["activeTab"],
+    "permissions": [
+        "activeTab"
+    ],
     "content_scripts": [
-      {
-        "matches": ["*://*/*"],
-        "js": ["src/content_script.js"]
-      }
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "src/content_script.js"
+            ]
+        }
     ]
-  }
+}

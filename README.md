@@ -1,19 +1,17 @@
 ## Background Color Changer
 
-The Background Color Changer is a simple chrome extension that allows you to change the
-background color of web pages. There are 7 different color options to choose from,
-making it easy to customize your browsing experience to your liking.
+Background Color Changer is a simple chrome extension that allows you to change the
+background color of web pages. There are various color options to choose from, choose
+the one as you like.
 
 ### Installation
 
-To install the extension from source, follow these steps:
+It is not published in the chrome extention store, thus you will need to install from source:
 
-* Clone or download this repository.
-* Open Google Chrome and go to chrome://extensions/.
-* Turn on developer mode using the toggle switch in the top right corner of the screen.
-* Click on the "Load unpacked" button in the top left corner of the screen.
-* Select the directory where you cloned or downloaded the repository.
-* The extension will now be installed and ready to use.
+* Clone this repo
+* Open Google Chrome and go to `chrome://extensions/`, turn on developer mode.
+* Click "Load unpacked" button and select the directory where this repo is located.
+* The extension will be installed.
 
 ### Usage
 
@@ -33,4 +31,4 @@ simply select the color you want and watch as the page background changes in rea
 
 ### License
 
-This extension is licensed under the MIT License. See LICENSE for more information.
+This extension is licensed under the MIT License. See [LICENSE](./LICENSE) for more information.

@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Choose a Color</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 14px;
-        padding: 20px;
-      }
-      h1 {
-        font-size: 16px;
-        margin-bottom: 10px;
-      }
-      label {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        margin: 5px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 30px;
-        cursor: pointer;
-      }
-      input[type="radio"] {
-        display: none;
-      }
-      input[type="radio"]:checked + label {
-        border: 5px solid #4ECDC4;
-      }
-      button {
-        display: block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #4ECDC4;
-        color: #FFFFFF;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: #3CB8B1;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Choose a Color:</h1>
-    <div>
-      <input type="radio" id="color1" name="color" value="red">
-      <label for="color1" style="background-color: #E74C3C;"></label>
-      <input type="radio" id="color2" name="color" value="orange">
-      <label for="color2" style="background-color: #FFA07A;"></label>
-      <input type="radio" id="color3" name="color" value="yellow">
-      <label for="color3" style="background-color: #F1C40F;"></label>
-      <input type="radio" id="color4" name="color" value="green">
-      <label for="color4" style="background-color: #2ECC71;"></label>
-      <input type="radio" id="color5" name="color" value="blue">
-      <label for="color5" style="background-color: #3498DB;"></label>
-      <input type="radio" id="color6" name="color" value="purple">
-      <label for="color6" style="background-color: #9B59B6;"></label>
-      <input type="radio" id="color7" name="color" value="pink">
-      <label for="color7" style="background-color: #FFC0CB;"></label>
-    </div>
-    <button id="apply-color-button">Apply</button>
-    <script src="popup.js"></script>
-  </body>
+
+<head>
+  <title>Choose a Color</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"]:checked+label {
+      border: 5px solid #4ECDC4;
+    }
+
+    button {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4ECDC4;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3CB8B1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Choose a Color:</h1>
+  <div>
+    <input type="radio" id="color1" name="color" value="red">
+    <label for="color1" style="background-color: #E74C3C;"></label>
+    <input type="radio" id="color2" name="color" value="orange">
+    <label for="color2" style="background-color: #FFA07A;"></label>
+    <input type="radio" id="color3" name="color" value="yellow">
+    <label for="color3" style="background-color: #F1C40F;"></label>
+    <input type="radio" id="color4" name="color" value="green">
+    <label for="color4" style="background-color: #2ECC71;"></label>
+    <input type="radio" id="color5" name="color" value="blue">
+    <label for="color5" style="background-color: #3498DB;"></label>
+    <input type="radio" id="color6" name="color" value="purple">
+    <label for="color6" style="background-color: #9B59B6;"></label>
+    <input type="radio" id="color7" name="color" value="pink">
+    <label for="color7" style="background-color: #FFC0CB;"></label>
+  </div>
+  <button id="apply-color-button">Apply</button>
+  <script src="popup.js"></script>
+</body>
+
 </html>
